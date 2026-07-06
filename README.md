@@ -21,6 +21,10 @@ Ensure you have the following hardware components before configuring the firmwar
 
 ---
 
+## Circuit Diagram
+
+![](https://github.com/Prabrit/Ac-controller-esp32/blob/main/Smartac%20citcuit.png)
+
 ## Installation 
 
 Please install the mandatory external software dependencies via your **Arduino IDE Library Manager**:
@@ -131,7 +135,22 @@ Ensure your files are organized like this before uploading them to GitHub or ope
 2. Launch the **Serial Monitor** adjusted to a standard communication baud of `115200`.
 3. Direct your original factory physical controller at your receiver setup to output the accurate `uint16_t` storage arrays.
 
-`[Insert Screenshot: Arduino IDE Serial Monitor capturing raw IR timing arrays]`
+Example captured signal by IR Reciver in **Serial Monitor** -
+```cpp
+--- NEW IR SIGNAL CAPTURED ---
+Signal length (X): 99
+
+uint16_t rawCool24C[] = {1174, 406, 1180, 406, 1174, 2446, 1164, 2456, 1128, 456, 1122, 468, 1090, 2552, 1062, 
+  2560, 1036, 550, 1036, 550, 1036, 2584, 1036, 552, 1036, 2586, 1034, 552, 1034, 552, 
+  1034, 552, 1034, 2586, 1034, 552, 1034, 552, 1034, 552, 1034, 552, 1034, 2586, 1034, 
+  2586, 1034, 2586, 1034, 552, 1034, 554, 1034, 552, 1034, 2588, 1032, 2588, 1034, 554, 
+  1032, 2588, 1034, 2588, 1032, 554, 1032, 554, 1034, 554, 1032, 2588, 1032, 2590, 1032, 
+  2590, 1032, 2590, 1030, 554, 1032, 554, 1030, 556, 1030, 556, 1030, 2590, 1030, 2614, 
+  1006, 2614, 1006, 2614, 1006, 580, 1006, 580, 1006};
+----------------------------------------
+
+
+```
 
 ### 2. Creating Your Sinric Dashboard Portal
 1. Create your account over at [portal.sinric.pro](https://portal.sinric.pro).
@@ -139,7 +158,7 @@ Ensure your files are organized like this before uploading them to GitHub or ope
 3. Label your system profile and strictly assign the device type structure to **Window AC**.
 4. Save your configuration and navigate to your main dashboard profile screen to collect your unique `App Key`, `App Secret`, and virtual `Device ID`.
 
-`[Insert Screenshot: Sinric Pro Portal credentials pane highlighting App Key and Device ID placements]`
+![](https://github.com/Prabrit/Ac-controller-esp32/blob/main/Sinric%20pro.png)
 
 ### 3. Final Firmware Assembly
 1. Paste your custom sniffed integer sequences into their corresponding constants defined inside `ac_codes.h`.
@@ -156,6 +175,10 @@ Because standard infrared signals operate purely on a unidirectional, open-loop 
 * Local OLED graphics frameworks hook direct execution feedback variables instantly, ensuring offline diagnostic metrics are readable during execution loops.
 
 ---
+
+## Working Image of the Project 
+
+![](https://drive.google.com/file/d/1RsQqdqmJzWQTOs1_rGyxL2B5FWqt5Aqz/view?usp=sharing)
 
 ## Contributing
 

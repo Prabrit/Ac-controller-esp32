@@ -124,14 +124,14 @@ Ensure your files are organized like this before uploading them to GitHub or ope
 ```text
 /Smart_AC_Project
 │
-├── 01_IR_Code_Capture.ino        # Step 1: Utility to read your physical remote
-├── 02_AC_Remote_Main.ino         # Step 2: The main smart home logic
+├── IR_Code_Capture.ino        # Step 1: Utility to read your physical remote
+├── AC_Remote.ino         # Step 2: The main smart home logic
 └── ac_codes.h                    # Step 2: Where you paste your captured IR arrays
 ```
 ## Setup and Installation Guide
 
 ### 1. Sniffing Your Native Remote Layout
-1. Deploy `01_IR_Code_Capture.ino` straight to your microchip platform.
+1. Deploy `IR_Code_Capture.ino` straight to your microchip platform.
 2. Launch the **Serial Monitor** adjusted to a standard communication baud of `115200`.
 3. Direct your original factory physical controller at your receiver setup to output the accurate `uint16_t` storage arrays.
 
@@ -162,7 +162,7 @@ uint16_t rawCool24C[] = {1174, 406, 1180, 406, 1174, 2446, 1164, 2456, 1128, 456
 
 ### 3. Final Firmware Assembly
 1. Paste your custom sniffed integer sequences into their corresponding constants defined inside `ac_codes.h`.
-2. Open `02_AC_Remote_Main.ino`, substitute the blank setup definitions with your real access details, and flash the software payload to start processing automated climate events!
+2. Open `AC_Remote.ino`, substitute the blank setup definitions with your real access details, and flash the software payload to start processing automated climate events!
 
 ---
 

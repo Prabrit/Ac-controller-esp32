@@ -63,7 +63,7 @@ graph TD
 
 ## Usage
 
-Here is a quick minimal example of how to configure your security credentials block within `02_AC_Remote_Main.ino` to establish authorization channels with your local network and cloud portal:
+Here is a quick minimal example of how to configure your security credentials block within `AC_Remote.ino` to establish authorization channels with your local network and cloud portal:
 
 ```cpp
 #include <Arduino.h>

@@ -47,7 +47,7 @@ graph TD
     C -->|Hardware Pulse: sendRaw| E["Range-Boosting IR Blaster<br><i>S8050 Transistor Circuit</i>"]
     E -->|38kHz Infrared Flash| F["Physical AC Unit<br><i>Physical state updated</i>"]
 
-    %% Styling for visual appeal on GitHub
+    
     classDef cloud fill:#2d72d9,stroke:#1a4a91,stroke-width:2px,color:#fff;
     classDef user fill:#e67e22,stroke:#d35400,stroke-width:2px,color:#fff;
     classDef hardware fill:#2ecc71,stroke:#27ae60,stroke-width:2px,color:#fff;

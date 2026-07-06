@@ -1,9 +1,9 @@
-| <img width="200" alt="Coding_agent_logo" src="https://github.com/Prabrit/Coding-Agent/blob/main/Coding_agent.png"> | <h2>Smart AC Remote Control (ESP32 + Sinric Pro)</h2><p align="center"><a href="#features">Features</a> • <a href="#hardware-requirements">Hardware Requirements</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#setup-and-installation-guide">Setup Guide</a> • <a href="#contributing">Contributing</a> • <a href="#license">License</a></p> |
+| <img width="200" alt="Coding_agent_logo" src="https://github.com/Prabrit/Ac-controller-esp32/blob/main/smart%20ac.jpg"> | <h2>Smart AC Remote Control (ESP32 + Sinric Pro)</h2><p align="center"><a href="#features">Features</a> • <a href="#hardware-requirements">Hardware Requirements</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#setup-and-installation-guide">Setup Guide</a> • <a href="#contributing">Contributing</a> • <a href="#license">License</a></p> |
 |:---:|:---|
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-ESP32-blue.svg)](https://www.espressif.com/en/products/socs/esp32)
-[![Framework](https://img.shields.io/badge/framework-Arduino-orange.svg)](https://www.arduino.cc/)
+[![Platform](https://img.shields.io/badge/platform-Arduino-orange.svg)](https://www.arduino.cc/en/software/)
+[![Framework](https://img.shields.io/badge/framework-esp32-blue.svg)](https://www.espressif.com/en/products/socs/esp32)
 
 ---
 
@@ -114,6 +114,16 @@ Binds the native multi-tiered interface slider down to explicit hardware command
 
 ---
 
+## Project Structure
+Ensure your files are organized like this before uploading them to GitHub or opening them in the Arduino IDE:
+
+```text
+/Smart_AC_Project
+│
+├── 01_IR_Code_Capture.ino        # Step 1: Utility to read your physical remote
+├── 02_AC_Remote_Main.ino         # Step 2: The main smart home logic
+└── ac_codes.h                    # Step 2: Where you paste your captured IR arrays
+```
 ## Setup and Installation Guide
 
 ### 1. Sniffing Your Native Remote Layout
@@ -173,5 +183,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">
   Made with ❤️ for the open-source IoT and smart home community
 
-  Please ⭐️ this repository if you found it helpful! Your support is greatly appreciated. :)
+ 
 </p>

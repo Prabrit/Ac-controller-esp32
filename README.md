@@ -122,11 +122,15 @@ Binds the native multi-tiered interface slider down to explicit hardware command
 Ensure your files are organized like this before uploading them to GitHub or opening them in the Arduino IDE:
 
 ```text
-/Smart_AC_Project
+/Code files
 │
-├── IR_Code_Capture.ino        # Step 1: Utility to read your physical remote
-├── AC_Remote.ino         # Step 2: The main smart home logic
-└── ac_codes.h                    # Step 2: Where you paste your captured IR arrays
+├── /IR_Code_Capture
+|   |
+|   └── IR_Code_Capture.ino     # Step 1: Utility to read your physical remote
+└── /AC_Remote
+     |
+     ├── AC_Remote.ino           # Step 2: The main smart home logic
+     └── ac_codes.h              # Step 2: Where you paste your captured IR arrays
 ```
 ## Setup and Installation Guide
 

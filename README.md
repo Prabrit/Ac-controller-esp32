@@ -176,9 +176,11 @@ Because standard infrared signals operate purely on a unidirectional, open-loop 
 
 ---
 
-## Working Image of the Project 
+## Image of the Project 
 
-![](https://drive.google.com/file/d/1RsQqdqmJzWQTOs1_rGyxL2B5FWqt5Aqz/view?usp=sharing)
+![](https://github.com/Prabrit/Ac-controller-esp32/blob/main/working.jpg)
+
+---
 
 ## Contributing
 
